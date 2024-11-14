@@ -1,0 +1,7 @@
+/Users/Jawad/github_repos/JSY/Dotnet_Jenkins/published_files/DotNet_Jenkins
+/Users/Jawad/github_repos/JSY/Dotnet_Jenkins/published_files/appsettings.Development.json
+/Users/Jawad/github_repos/JSY/Dotnet_Jenkins/published_files/appsettings.json
+/Users/Jawad/github_repos/JSY/Dotnet_Jenkins/published_files/DotNet_Jenkins.dll
+/Users/Jawad/github_repos/JSY/Dotnet_Jenkins/published_files/DotNet_Jenkins.deps.json
+/Users/Jawad/github_repos/JSY/Dotnet_Jenkins/published_files/DotNet_Jenkins.runtimeconfig.json
+/Users/Jawad/github_repos/JSY/Dotnet_Jenkins/published_files/DotNet_Jenkins.pdb

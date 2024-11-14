@@ -1,4 +1,7 @@
 ﻿<Properties GitUserInfo="UsingGIT" StartupConfiguration="{1D30178A-25E2-40B5-BA21-D7F0F2FEA1BF}|Default">
+  <MonoDevelop.Ide.ItemProperties.DotNet__Jenkins PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.Workbench ActiveDocument="DotNet_Jenkins/Views/Home/Index.cshtml">
     <Files>
       <File FileName="DotNet_Jenkins/Views/Home/Index.cshtml" Line="11" Column="1" />
@@ -6,10 +9,12 @@
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="DotNet_Jenkins">
+          <Node name="DotNet_Jenkins" expanded="True">
             <Node name="DotNet_Jenkins" expanded="True">
               <Node name="Views" expanded="True">
-                <Node name="Home" expanded="True" />
+                <Node name="Home" expanded="True">
+                  <Node name="Index.cshtml" selected="True" />
+                </Node>
               </Node>
             </Node>
           </Node>
@@ -17,11 +22,8 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.DotNet__Jenkins PreferredExecutionTarget="/Applications/Google Chrome.app" />
 </Properties>
