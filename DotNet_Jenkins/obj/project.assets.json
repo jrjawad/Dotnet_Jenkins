@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/Jawad/github_repos/JSY/Dotnet_Jenkins/DotNet_Jenkins/DotNet_Jenkins/DotNet_Jenkins.csproj",
+      "projectUniqueName": "/Users/Jawad/github_repos/JSY/Dotnet_Jenkins/DotNet_Jenkins/DotNet_Jenkins.csproj",
       "projectName": "DotNet_Jenkins",
-      "projectPath": "/Users/Jawad/github_repos/JSY/Dotnet_Jenkins/DotNet_Jenkins/DotNet_Jenkins/DotNet_Jenkins.csproj",
+      "projectPath": "/Users/Jawad/github_repos/JSY/Dotnet_Jenkins/DotNet_Jenkins/DotNet_Jenkins.csproj",
       "packagesPath": "/Users/Jawad/.nuget/packages/",
-      "outputPath": "/Users/Jawad/github_repos/JSY/Dotnet_Jenkins/DotNet_Jenkins/DotNet_Jenkins/obj/",
+      "outputPath": "/Users/Jawad/github_repos/JSY/Dotnet_Jenkins/DotNet_Jenkins/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/Jawad/.nuget/NuGet/NuGet.Config"
