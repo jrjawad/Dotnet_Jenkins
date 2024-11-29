@@ -1,0 +1,45 @@
+pipeline {
+    agent any
+    environment {
+        registryCredential = 'ecr:us-east-2:awscreds'
+        appRegistry = "951401132355.dkr.ecr.us-east-2.amazonaws.com/vprofileappimg"
+        vprofileRegistry = "https://951401132355.dkr.ecr.us-east-2.amazonaws.com"
+    }
+  stages {
+    stages {
+        stage('Checkout Code') {
+            steps {
+                echo 'Cloning the repository...'
+                checkout scmGit(branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[credentialsId: 'eHRM_UAF', url: 'https://github.com/jrjawad/eHRM_UAF.git']])
+            }
+        }
+        stage('Build ASP.NET Core Application') {
+            steps {
+                echo 'Building ASP.NET Core Application...'
+
+                sh 'dotnet publish -c Release -o ./publish'
+                sh 'cp -r $WORKSPACE/Dockerfile $WORKSPACE/publish  && mkdir -p $WORKSPACE/publish/UploadFiles'
+            }
+        }
+    stage('Build App Image') {
+       steps {
+       
+         script {
+                dockerImage = docker.build( appRegistry + ":$BUILD_NUMBER", "./Dockerfile")
+             }
+        }
+    }
+
+    stage('Upload App Image') {
+          steps{
+            script {
+              docker.withRegistry( vprofileRegistry, registryCredential ) {
+                dockerImage.push("$BUILD_NUMBER")
+                dockerImage.push('latest')
+              }
+            }
+          }
+     }
+
+  }
+}
